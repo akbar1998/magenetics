@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_margin="10dp"
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:id="@+id/sensor"
+        android:textColor="@color/colorAccent"
+        android:text="@string/magnetic_field"
+        android:textSize="23sp"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/host"
+            android:text="Send to server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Button>
+</LinearLayout>
